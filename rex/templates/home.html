@@ -1,0 +1,39 @@
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% load static %}
+</head>
+<body>
+    <!-- style="background:transparent url('{% static '' %}')"-->
+  {% block content %}
+  
+
+      <nav class="navbar navbar navbar-light bg-light" style="background:transparent url('{% static 'purplecamo.jpg' %}')">
+      <div class="container-fluid">
+        <b><a class="navbar-brand" style="font-size:300%; color:gold;" href="/">Rex Rex</a></b>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background:gold;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <b><a class="nav-link active" style="font-size:300%; color:gold;" aria-current="page" href="/projects/">Projects</a></b>
+            </li>
+            <li class="nav-item">
+              <b><a class="nav-link" style="font-size:300%; color:gold;" aria-current="page"
+                  href="/contact/">Contact</a></b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <br>
+      <div class="jumbotron" style="background:green;">
+        <div class="container-fluid py-5">
+          
+        </div>
+      </div>
+      {% endblock %}
+</body>
