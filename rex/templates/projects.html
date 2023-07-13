@@ -1,0 +1,66 @@
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% load static %}
+</head>
+<body style="background:transparent url('{% static 'greycamo.jpg' %}')">
+  {% block content %}
+  
+
+      <nav class="navbar navbar navbar-light bg-light" style="background:transparent url('{% static 'purplecamo.jpg' %}')">
+      <div class="container-fluid">
+        <b><a class="navbar-brand" style="font-size:300%; color:gold;" href="/">Rex Rex</a></b>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background:gold;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <b><a class="nav-link active" style="font-size:300%; color:gold;" aria-current="page" href="/projects/">Projects</a></b>
+            </li>
+            <li class="nav-item">
+              <b><a class="nav-link" style="font-size:300%; color:gold;" aria-current="page"
+                  href="/contact/">Contact</a></b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <br>
+      <div class = "container-fluid">
+          <center>
+          <div class = "row">
+            <div class = "col">
+                <h1>Acronimify</h1>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=O7rx0e_bV5c&ab_channel=SauceDatTV" allowfullscreen></iframe>
+                  </div>
+            </div>
+            <div class = "col">
+                <h1>Contractr</h1>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=O7rx0e_bV5c&ab_channel=SauceDatTV" allowfullscreen></iframe>
+                  </div>
+            </div>        
+          </div>
+          <div class = "row">
+            <div class = "col">
+                <h1>Deboos</h1>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=O7rx0e_bV5c&ab_channel=SauceDatTV" allowfullscreen></iframe>
+                  </div>
+            </div>
+            <div class = "col">
+                <h1>Docify</h1>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=O7rx0e_bV5c&ab_channel=SauceDatTV" allowfullscreen></iframe>
+                  </div>
+            </div>
+          </div>
+        </center>
+      </div>
+      
+{% endblock %}
+</body>

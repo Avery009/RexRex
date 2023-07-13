@@ -4,8 +4,7 @@
     {% bootstrap_javascript %}
     {% load static %}
 </head>
-<body>
-    <!-- style="background:transparent url('{% static '' %}')"-->
+<body style="background:transparent url('{% static 'goldflower.jpg' %}')">
   {% block content %}
   
 
@@ -30,9 +29,33 @@
       </div>
       </nav>
       <br>
-      <div class="jumbotron" style="background:green;">
+      {% if success %}
+      <div class="alert alert-success" role="alert">Successfully Added Inquiry</div>
+      {% endif %}
+      {% if error %}
+      <div class="alert alert-danger" role="alert">{{error}}</div>
+      {% endif %}
+      <div class="jumbotron">
         <div class="container-fluid py-5">
-          
+          <center>
+            <span class = "border border-warning">
+              <div class="jumbotron" style="background-color:ghostwhite;">
+              <h1 style="color:gold;">
+                Rex Rex Operations LLC
+              </h1>
+              <h3 style="color:gold;">
+              Rex Rex Operations LLC was founded in July of 2023 by J. Avery King who is the current Chief Executive Officer. This company specializes in website design and custom coding solutions. Please utilize the inquiry portion of our website for contacting the CEO directly and check out the current and upcoming projects. 
+              </h3>
+            </div>
+            </span>
+          </center>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <div class="container-fluid py-5">
+          <center>
+          <img src="{% static 'profile.jpg' %}">
+          </center>
         </div>
       </div>
       {% endblock %}
